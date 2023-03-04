@@ -1,25 +1,28 @@
-*
 #archives line
-	{
-	stroke:blue;
-	stroke-width:8px;
-	}
-	#archives line.lred
-	{
-	stroke:red;
-	}
-	#archives line.lblack
-	{
-	stroke:black;
-	stroke-width:8px;
-	}
-	.node
-	{
-	background-color:blue;
-	border-radius:50%
-	}
-	.node.red
-	{
-	background-color:red;
-	border-radius:50%
-	}
+{
+stroke:blue;
+stroke-width:8px;
+}
+
+#archives line.lred
+{
+stroke:red;
+}
+	
+#archives line.lblack
+{
+stroke:black;
+stroke-width:8px;
+}
+
+.node
+{
+background-color:blue;
+border-radius:50%
+}
+
+.node.red
+{
+background-color:red;
+border-radius:50%
+}

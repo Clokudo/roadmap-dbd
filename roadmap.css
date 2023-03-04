@@ -1,12 +1,12 @@
 #archives line
 {
-stroke:blue;
+stroke:red;
 stroke-width:8px;
 }
 
-#archives line.lred
+#archives line.lblue
 {
-stroke:red;
+stroke:blue;
 }
 	
 #archives line.lblack
@@ -17,12 +17,12 @@ stroke-width:8px;
 
 .node
 {
-background-color:blue;
+background-color:red;
 border-radius:50%
 }
 
-.node.red
+.node.bblue
 {
-background-color:red;
+background-color:blue;
 border-radius:50%
 }

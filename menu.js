@@ -1,4 +1,3 @@
-<script>
 var str="";
 var archives=14;
 var nom=unescape(location.pathname);
@@ -31,4 +30,3 @@ str=str+"index.html\">TOME "+i+"</a>";
 }
 }
 document.getElementById("menu").innerHTML = str;
-</script>

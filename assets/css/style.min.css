@@ -636,6 +636,8 @@ a.purple {
 }
 
 #archives .node {
+    background-color:red;
+    border-radius:50%;
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;

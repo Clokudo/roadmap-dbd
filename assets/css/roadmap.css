@@ -6,17 +6,9 @@ stroke:blue;
 #archives line.lblack
 {
 stroke:black;
-stroke-width:8px;
 }
 
-.node
-{
-background-color:red;
-border-radius:50%
-}
-
-.node.bblue
+#archives .node.bblue
 {
 background-color:blue;
-border-radius:50%
 }

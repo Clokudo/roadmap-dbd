@@ -17,13 +17,23 @@
 <div id="archives">
 	<div class="name">TOME 14 - TRAHISON</div>
 	<div class="levels">
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 		<span id="N01">NIVEAU 1</span>
 		<span id="N02">NIVEAU 2</span>
 		<span id="N03" class="active">NIVEAU 3</span>
 		<span id="N04">NIVEAU 4</span>
 		<script>
-		if(new Date()<new Date("2023-03-14 17:00"))
+		var N02="";
+		if(new Date()<N02)
+		{
+		$("#N02").hide();
+		}
+		var N03="";
+		if(new Date()<N03)
+		{
+		$("#N03").hide();
+		}
+		var N04=new Date("2023-03-14 17:00");
+		if(new Date()<N04)
 		{
 		$("#N04").hide();
 		}
@@ -945,6 +955,7 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 <script type="text/javascript" src="assets/js/menu.js"></script>
 <script type="text/javascript" src="assets/js/unified.min.js"></script>

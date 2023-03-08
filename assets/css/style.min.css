@@ -753,8 +753,8 @@ a.purple {
 }
 
 #archives line {
-    stroke: rgba(208,30,30,.65);
-    stroke-width: 3px
+    stroke: red;
+    stroke-width: 8px
 }
 
 #archives line.best {

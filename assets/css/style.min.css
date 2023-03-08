@@ -656,22 +656,22 @@ a.purple {
 }
 
 #archives .node.quest {
-    background-image: url(/dbdassets/archives/questIcons_arrative.png);
+    background-image: url(../../dbdassets/archives/questIcons_arrative.png);
     height: 66px;
     margin: -32px 0 0 -42px;
     width: 82px
 }
 
 #archives .node.shared {
-    background-image: url(/dbdassets/archives/questIcons_shared.png)
+    background-image: url(../../dbdassets/archives/questIcons_shared.png)
 }
 
 #archives .node.survivor {
-    background-image: url(/dbdassets/archives/questIcons_survivor.png)
+    background-image: url(../../dbdassets/archives/questIcons_survivor.png)
 }
 
 #archives .node.killer {
-    background-image: url(/dbdassets/archives/questIcons_killer.png)
+    background-image: url(../../dbdassets/archives/questIcons_killer.png)
 }
 
 #archives .node.show,#archives .node:hover {

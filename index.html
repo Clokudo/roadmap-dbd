@@ -17,10 +17,17 @@
 <div id="archives">
 	<div class="name">TOME 14 - TRAHISON</div>
 	<div class="levels">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 		<span id="N01">NIVEAU 1</span>
 		<span id="N02">NIVEAU 2</span>
 		<span id="N03" class="active">NIVEAU 3</span>
 		<span id="N04">NIVEAU 4</span>
+		<script>
+		if(new Date()<new Date("2023-03-14 17:00"))
+		{
+		$("#N04").hide();
+		}
+		</script>
 	</div>
 	<div class="wrapper" style="height: 470px; width: 890.67px;">
 		<div class="level" data-height="426" data-width="936">
@@ -938,16 +945,9 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
 <script type="text/javascript" src="assets/js/menu.js"></script>
 <script type="text/javascript" src="assets/js/unified.min.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a4c15908aa82a16","version":"2023.2.0","r":1,"token":"7943acbc4e1f4533b35fe7dfbbd64e12","si":100}' crossorigin="anonymous"></script>
-<script>
-if(new Date()<new Date("2023-03-14 17:00"))
-{
-$("#N04").hide();
-}
-</script>
 </body>
 </html>

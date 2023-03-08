@@ -1,0 +1,28 @@
+#archives line
+{
+stroke:red;
+stroke-width:8px;
+}
+
+#archives line.lblue
+{
+stroke:blue;
+}
+	
+#archives line.lblack
+{
+stroke:black;
+stroke-width:8px;
+}
+
+.node
+{
+background-color:red;
+border-radius:50%
+}
+
+.node.bblue
+{
+background-color:blue;
+border-radius:50%
+}

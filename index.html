@@ -28,32 +28,32 @@
 	var N02=new Date(1675872000000);
 	var N03=new Date(1677081600000);
 	var N04=new Date(1677081600000);
+	var CN01=document.getElementById("N01");
+	var CN02=document.getElementById("N02");
+	var CN03=document.getElementById("N03");
+	var CN04=document.getElementById("N04");
 	if(new Date()<N01)
 	{
 	$("#N01").hide();
 	}
 	if(new Date()<N02)
 	{
-	var element = document.getElementById("N01");
-	element.classList.add("active");
+	CN01.classList.add("active");
 	$("#N02").hide();
 	}
 	if(new Date()<N03)
 	{
-	var element = document.getElementById("N02");
-	element.classList.add("active");
+	CN02.classList.add("active");
 	$("#N03").hide();
 	}
 	if(new Date()<N04)
 	{
-	var element = document.getElementById("N03");
-	element.classList.add("active");
+	CN03.classList.add("active");
 	$("#N04").hide();
 	}
 	else
 	{
-	var element = document.getElementById("N04");
-	element.classList.add("active");
+	CN04.classList.add("active");
 	}
 	</script>
 	<div class="wrapper" style="height: 470px; width: 890.67px;">

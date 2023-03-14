@@ -41,10 +41,20 @@
 	CN01.classList.add("active");
 	$("#N02").hide();
 	}
+	else
+	{
+	CN01.classList.remove("active");
+	CN02.classList.add("active");
+	}
 	if(new Date()<N03)
 	{
 	CN02.classList.add("active");
 	$("#N03").hide();
+	}
+	else
+	{
+	CN02.classList.remove("active");
+	CN03.classList.add("active");
 	}
 	if(new Date()<N04)
 	{
@@ -53,6 +63,7 @@
 	}
 	else
 	{
+	CN03.classList.remove("active");
 	CN04.classList.add("active");
 	}
 	</script>

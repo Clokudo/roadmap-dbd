@@ -18,7 +18,7 @@ var nom=unescape(location.pathname);
 var nom=nom.replace(/\/$/,"");
 var nom=nom.replace(".html","");
 var nom=nom.substring(nom.lastIndexOf("/")+1);
-if(nom=="index")
+if(nom=="index" or nom=="roadmap-dbd")
 {
 nom=archives;
 }

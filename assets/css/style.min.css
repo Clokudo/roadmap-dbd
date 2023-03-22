@@ -700,7 +700,7 @@ a.purple {
 }
 
 #archives .node.quest .info {
-    margin: 49px
+    display: none
 }
 
 #archives .node.show .info,#archives .node:hover .info {

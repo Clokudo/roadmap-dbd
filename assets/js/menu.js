@@ -45,10 +45,3 @@ str=str+"index.html\">TOME "+i+"</a>";
 }
 document.getElementById("name").innerHTML = "TOME "+nom+" - "+this["T" + nom];
 document.getElementById("menu").innerHTML = str;
-const infoElements = document.querySelectorAll('.info');
-
-infoElements.forEach((infoElement) => {
-  if (!infoElement.querySelector('.rewards')) {
-    infoElement.style.display = 'none';
-  }
-});

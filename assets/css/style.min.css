@@ -684,11 +684,11 @@ a.purple {
     background: rgba(0,0,0,.67);
     margin: 32px;
     opacity: 0;
-    padding: 10px;
+    padding: 5px;
     pointer-events: none;
     position: absolute;
     transition: opacity .5s ease-in-out;
-    width: 320px
+    width: 150px
 }
 
 #archives .info.left {
@@ -707,24 +707,49 @@ a.purple {
     opacity: 1
 }
 
-#archives .info {
-    margin: 0 0 8px
+#archives .info{
+    display: flex;
+    justify-content: center;
+}
+
+#archives .info br {
+    display: none
+}
+
+#archives .info h3 {
+    display: none
+}
+
+#archives .info h4 {
+    display: none
+}
+
+#archives .info p {
+    display: none
+}
+
+#archives .info small {
+    display: none
+}
+
+#archives .info ul {
+    display: none
 }
 
 #archives .info h3 {
     color: #d01e1e;
     margin-bottom: 4px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 #archives .info h4 {
     margin-bottom: 10px;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 #archives .info ul {
     padding: 0;
-    list-style-position: inside
+    list-style-position: inside;
 }
 
 #archives .info .glyph {
@@ -736,7 +761,7 @@ a.purple {
 #archives .rewards {
     align-items: center;
     display: flex;
-    margin-top: 8px
+    margin-top: 0px
 }
 
 #archives .rewards img {

@@ -789,8 +789,7 @@ a.purple {
 }
 
 #archives .bottom {
-    margin-top: 10px;
-    text-align: center
+    display: none
 }
 
 #archives .event {
@@ -1685,7 +1684,7 @@ a.purple {
 #footer {
     align-items: center;
     background: rgba(0,0,0,.4);
-    display: flex;
+    display: none;
     font-size: 12px;
     height: 34px;
     overflow: hidden;

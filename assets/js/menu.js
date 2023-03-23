@@ -18,9 +18,28 @@ var nom=unescape(location.pathname);
 var nom=nom.replace(/\/$/,"");
 var nom=nom.replace(".html","");
 var nom=nom.substring(nom.lastIndexOf("/")+1);
+// Sélection de la div "levels"
+const levelsDiv = document.querySelector('.levels');
+
+// Sélection de tous les éléments "span" dans la div "levels"
+const spans = levelsDiv.querySelectorAll('span');
+
+// Boucle à travers chaque élément et affectation d'un ID séquentiel
+for (let i = 0; i < spans.length; i++) {
+  const id = `N${(i+1).toString().padStart(2, '0')}`;
+  spans[i].setAttribute('id', id);
+}
+// Sélection de tous les éléments de la classe "level"
+const levels = document.querySelectorAll('.level');
+
+// Boucle à travers chaque élément et affectation d'un ID séquentiel
+for (let i = 0; i < levels.length; i++) {
+  const id = `LN${(i+1).toString().padStart(2, '0')}`;
+  levels[i].setAttribute('id', id);
+}
 if(nom=="index"||nom=="roadmap-dbd")
 {
-nom=archives;
+var nom=archives;
 }
 for(var i=1;i<=archives;i++)
 {
@@ -45,3 +64,146 @@ str=str+"index.html\">TOME "+i+"</a>";
 }
 document.getElementById("name").innerHTML = "TOME "+nom+" - "+this["T" + nom];
 document.getElementById("menu").innerHTML = str;
+
+const lines = document.querySelectorAll("line");
+
+lines.forEach((line) => {
+  line.addEventListener("click", () => {
+    if (line.classList.contains("lblue")) {
+      line.classList.remove("lblue");
+      line.classList.add("lblack");
+    } else if (line.classList.contains("lblack")) {
+      line.classList.remove("lblack");
+    } else {
+      line.classList.add("lblue");
+    }
+  });
+})
+/*var elements = document.getElementsByClassName("info");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].style.display = "none";
+}*/
+if(nom==archives)
+{
+var N01=new Date();
+var N02=new Date();
+var N03=new Date();
+var N04=new Date();
+var CN01=document.getElementById("N01");
+var CN02=document.getElementById("N02");
+var CN03=document.getElementById("N03");
+var CN04=document.getElementById("N04");
+var LN01=document.getElementById("LN01");
+var LN02=document.getElementById("LN02");
+var LN03=document.getElementById("LN03");
+var LN04=document.getElementById("LN04");
+if(new Date()>=N01)
+{
+$("#N01").show();
+CN01.classList.add("active");
+if(LN01!=null)
+{
+LN01.classList.add("show");
+}
+}
+if(new Date()>=N02)
+{
+$("#N02").show();
+CN01.classList.remove("active");
+if(LN01!=null)
+{
+LN01.classList.remove("show");
+}
+CN02.classList.add("active");
+if(LN02!=null)
+{
+LN02.classList.add("show");
+}
+}
+if(new Date()>=N03)
+{
+$("#N03").show();
+CN02.classList.remove("active");
+if(LN02!=null)
+{
+LN02.classList.remove("show");
+}
+CN03.classList.add("active");
+if(LN03!=null)
+{
+LN03.classList.add("show");
+}
+}
+if(new Date()>=N04)
+{
+$("#N04").show();
+CN03.classList.remove("active");
+if(LN03!=null)
+{
+LN03.classList.remove("show");
+}
+CN04.classList.add("active");
+if(LN04!=null)
+{
+LN04.classList.add("show");
+}
+}
+}
+else
+{
+$("#N01").show();
+$("#N02").show();
+$("#N03").show();
+$("#N04").show();
+var CN04=document.getElementById("N04");
+var LN04=document.getElementById("LN04");
+CN04.classList.add("active");
+if(LN04!=null)
+{
+LN04.classList.add("show");
+}
+}
+
+// Sélectionnez la div ayant la classe "level show"
+const levelShowDiv = document.querySelector('div.level.show');
+
+// Sélectionnez tous les éléments ayant la classe "node" dans la div correspondante
+const nodes = levelShowDiv.querySelectorAll('.node');
+
+// Ajouter un écouteur d'événements "click" à chaque nœud
+nodes.forEach((node) => {
+  node.addEventListener("click", () => {
+    if (node.classList.contains("bblue")) {
+      node.classList.remove("bblue");
+    } else {
+      node.classList.add("bblue");
+    }
+  });
+});
+
+// Initialisation de la variable pour stocker le total de bloodpoints des nodes bleues et rouges
+let blueBloodpoints = 0;
+let redBloodpoints = 0;
+
+// Parcourir chaque élément pour récupérer le nombre de bloodpoints
+nodes.forEach(node => {
+  // Vérifier si l'élément est une node bleue ou rouge
+  if (node.classList.contains('bblue')) {
+    // Si c'est une node bleue, ajouter le nombre de bloodpoints à la variable correspondante
+    const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+    const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+    if (!isNaN(bloodpoints)) {
+      blueBloodpoints += bloodpoints;
+    }
+  } else {
+    // Si c'est une node rouge, ajouter le nombre de bloodpoints à la variable correspondante
+    const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+    const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+    if (!isNaN(bloodpoints)) {
+      redBloodpoints += bloodpoints;
+    }
+  }
+});
+
+const resultElement = document.getElementById('result');
+resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints} BP)</span> / <span style="background:red">A conserver (${redBloodpoints} BP)</span>`;

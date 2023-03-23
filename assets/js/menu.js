@@ -164,46 +164,107 @@ LN04.classList.add("show");
 }
 }
 
-// Sélectionnez la div ayant la classe "level show"
-const levelShowDiv = document.querySelector('div.level.show');
+function updateResult(activeSpan) {
+  // Vérifier si un span actif a été trouvé
+  if (activeSpan) {
+    // Récupérer l'index du span actif
+    const activeIndex = Array.from(levelSpans).indexOf(activeSpan);
 
-// Sélectionnez tous les éléments ayant la classe "node" dans la div correspondante
-const nodes = levelShowDiv.querySelectorAll('.node');
+    // Afficher le niveau correspondant au span actif et ajouter la classe "active" au span correspondant
+    const levelToShow = document.querySelector(`.level:nth-child(${activeIndex + 1})`);
+    levelToShow.classList.add('show');
+    activeSpan.classList.add('active');
 
-// Ajouter un écouteur d'événements "click" à chaque nœud
-nodes.forEach((node) => {
-  node.addEventListener("click", () => {
-    if (node.classList.contains("bblue")) {
-      node.classList.remove("bblue");
-    } else {
-      node.classList.add("bblue");
-    }
+    // Sélectionner les éléments "node" dans le niveau actif
+    const nodes = levelToShow.querySelectorAll('.node');
+    
+    // Initialisation des variables pour stocker les total de bloodpoints des nodes bleues et rouges
+    let blueBloodpoints = 0;
+    let redBloodpoints = 0;
+
+    // Parcourir chaque élément pour récupérer le nombre de bloodpoints
+    nodes.forEach(node => {
+      // Vérifier si l'élément est une node bleue ou rouge
+      if (node.classList.contains('bblue')) {
+        // Si c'est une node bleue, ajouter le nombre de bloodpoints à la variable correspondante
+        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+        if (!isNaN(bloodpoints)) {
+          blueBloodpoints += bloodpoints;
+        }
+      } else {
+        // Si c'est une node rouge, ajouter le nombre de bloodpoints à la variable correspondante
+        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+        if (!isNaN(bloodpoints)) {
+          redBloodpoints += bloodpoints;
+        }
+      }
+    });
+
+    // Mettre à jour le contenu de la div "result"
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints} BP)</span> / <span style="background:red">A conserver (${redBloodpoints} BP)</span>`;
+  }
+}
+
+// Récupérer tous les spans de la div "levels"
+const levelSpans = document.querySelectorAll('.levels span');
+
+// Ajouter un gestionnaire d'événement pour les clics sur les spans
+levelSpans.forEach((span, index) => {
+  span.addEventListener('click', () => {
+    // Cacher tous les niveaux et retirer la classe "active" de tous les spans
+    document.querySelectorAll('.level').forEach(level => level.classList.remove('show'));
+    levelSpans.forEach(span => span.classList.remove('active'));
+
+    // Afficher le niveau correspondant au span cliqué et ajouter la classe "active" au span correspondant
+    const levelToShow = document.querySelector(`.level:nth-child(${index + 1})`);
+    levelToShow.classList.add('show');
+    span.classList.add('active');
+
+    // Sélectionner les éléments "node" dans le niveau actif
+    const nodes = levelToShow.querySelectorAll('.node');
+    
+    // Initialisation des variables pour stocker les total de bloodpoints des nodes bleues et rouges
+    let blueBloodpoints = 0;
+    let redBloodpoints = 0;
+
+    // Parcourir chaque élément pour récupérer le nombre de bloodpoints
+    nodes.forEach(node => {
+      // Vérifier si l'élément est une node bleue ou rouge
+      if (node.classList.contains('bblue')) {
+        // Si c'est une node bleue, ajouter le nombre de bloodpoints à la variable correspondante
+        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+        if (!isNaN(bloodpoints)) {
+          blueBloodpoints += bloodpoints;
+        }
+      } else {
+        // Si c'est une node rouge, ajouter le nombre de bloodpoints à la variable correspondante
+        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+        if (!isNaN(bloodpoints)) {
+          redBloodpoints += bloodpoints;
+        }
+      }
+    });
+
+    // Mettre à jour le contenu de la div "result"
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints} BP)</span> / <span style="background:red">A conserver (${redBloodpoints} BP)</span>`;
   });
 });
 
-// Initialisation de la variable pour stocker le total de bloodpoints des nodes bleues et rouges
-let blueBloodpoints = 0;
-let redBloodpoints = 0;
+// Sélectionnez le span actif
+const activeSpan = document.querySelector('.levels span.active');
 
-// Parcourir chaque élément pour récupérer le nombre de bloodpoints
-nodes.forEach(node => {
-  // Vérifier si l'élément est une node bleue ou rouge
-  if (node.classList.contains('bblue')) {
-    // Si c'est une node bleue, ajouter le nombre de bloodpoints à la variable correspondante
-    const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
-    const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
-    if (!isNaN(bloodpoints)) {
-      blueBloodpoints += bloodpoints;
-    }
-  } else {
-    // Si c'est une node rouge, ajouter le nombre de bloodpoints à la variable correspondante
-    const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
-    const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
-    if (!isNaN(bloodpoints)) {
-      redBloodpoints += bloodpoints;
-    }
-  }
-});
+// Initialiser le premier span de la div "levels" comme "active" lors du premier chargement de la page
+if (!activeSpan) {
+  levelSpans[0].classList.add('active');
+  activeSpan = levelSpans[0];
+}
 
-const resultElement = document.getElementById('result');
-resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints} BP)</span> / <span style="background:red">A conserver (${redBloodpoints} BP)</span>`;
+// Appelez la fonction pour mettre à jour le contenu de la div result
+updateResult(activeSpan);
+

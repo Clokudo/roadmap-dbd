@@ -603,7 +603,8 @@ a.purple {
 #archives .levels {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    margin-top:10px
 }
 
 #archives .levels span {

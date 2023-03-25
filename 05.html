@@ -1,4 +1,4 @@
-
+<!--- hello, friend. -->
 <!DOCTYPE HTML>
 <html lang="fr">
 <head>
@@ -7,30 +7,952 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, user-scalable=no" />
 	<meta name="description" content="" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700" media="all" />
 	<link rel="stylesheet" type="text/css" href="assets/css/roadmap.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700" media="all" />
 </head>
 <body>
 <div id="menu" data-alwayssmall="true" class="small"></div>
 <div id="menutoggle" class="active"></div>
 <div id="archives">
 <div id="name" class="name"></div>
-	<div style="margin-bottom: 10px;">
-    <span style="background:blue">A valider</span>
-    <span> / </span>
-    <span style="background:red">A conserver</span>
-</div>
+	<div id="result"></div>
 	<div class="levels">
-		<span id="N01" hidden>NIVEAU 1</span>
-		<span id="N02" hidden>NIVEAU 2</span>
-		<span id="N03" hidden>NIVEAU 3</span>
-		<span id="N04" hidden>NIVEAU 4</span>
+		<span>NIVEAU 1</span>
+		<span>NIVEAU 2</span>
+		<span>NIVEAU 3</span>
+		<span>NIVEAU 4</span>
 	</div>
+	<div class="wrapper" style="height: 436px; width: 876px;">
+		<div class="level" data-height="436" data-width="876">
+			<div class="node survivor" style="top: 303.33px; left: 301.33px;">
+				<div class="info top">
+					<h3>Journée productive</h3>
+					<h4>Survivant Défi</h4>
+					<p>Gagnez <b>20000 points de sang</b> dans la catégorie <b>Objectifs</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 202.00px; left: 120.67px;">
+				<div class="info">
+					<h3>Et la lumière fut</h3>
+					<h4>Survivant Défi</h4>
+					<p>Réparez un total de <b>4&nbsp;générateur(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 202.00px; left: 602.67px;">
+				<div class="info left">
+					<h3>Libérateur</h3>
+					<h4>Survivant Défi</h4>
+					<p>Décrochez <b>6&nbsp;survivant(s)</b>. Le décrochage doit être sécurisé.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 202.00px; left: 783.33px;">
+				<div class="info left">
+					<h3>Tous les moyens sont bons</h3>
+					<h4>Survivant Défi</h4>
+					<p>Étourdissez le tueur <b>4&nbsp;fois</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 202.00px; left: 361.33px;">
+				<div class="info">
+					<h3>Finis les travaux manuels</h3>
+					<h4>Survivant Défi</h4>
+					<p>Purifiez <b>8&nbsp;totems</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 303.33px; left: 482.00px;">
+				<div class="info top left">
+					<h3>Poursuite mortelle</h3>
+					<h4>Tueur Défi</h4>
+					<p>Poursuivez les survivants pendant <b>180&nbsp;secondes</b> au total.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 404.00px; left: 422.00px;">
+				<div class="info top">
+					<h3>Supercherie mortelle</h3>
+					<h4>Tueur Défi</h4>
+					<p>Gagnez <b>20000 points de sang</b> dans la catégorie <b>Sournoiserie</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 404.00px; left: 120.67px;">
+				<div class="info top">
+					<h3>Repoussant</h3>
+					<h4>Tueur Défi</h4>
+					<p>Suspendez <b>20&nbsp;survivant(s)</b> à un crochet.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 303.33px; left: 662.67px;">
+				<div class="info top left">
+					<h3>Entrepôt de ferraille</h3>
+					<h4>Tueur Défi</h4>
+					<p>Endommagez <b>12&nbsp;générateur(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">15000</div>
+				</div>
+			</div>
+			<div class="node killer" style="background-image: url('dbdassets/archives/questIcons_killer_K03.png'); top: 404.00px; left: 662.67px;">
+				<div class="info top left">
+					<h3>Déchirez-les&nbsp;!</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Frappez <b>4 survivant(s)</b> à l'aide de la tronçonneuse avec <b>Le Montagnard</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 303.33px; left: 180.67px;">
+				<div class="info top">
+					<h3>Réparations risquées</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Finissez de réparer <b>2&nbsp;générateur(s)</b> dans le rayon de terreur du tueur. Vous devez être dans le rayon de terreur quand le générateur est terminé.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="background-image: url('dbdassets/archives/questIcons_survivor_S05.png'); top: 101.33px; left: 723.33px;">
+				<div class="info left">
+					<h3>Compétences de Nea</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Avec <b>Nea Karlsson</b>, échappez à <b>2&nbsp;poursuite(s)</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 101.33px; left: 844.00px;">
+				<div class="info left">
+					<h3>Partisan obscur</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Suspendez <b>5&nbsp;survivant(s)</b> à un crochet.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 101.33px; left: 602.67px;">
+				<div class="info left">
+					<h3>Héros de dernière minute</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Une fois le Sprint final lancé, décrochez <b>1 survivant(s)</b>. Le décrochage doit être sécurisé.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="background-image: url('dbdassets/archives/questIcons_Halloween2020.png'); top: 101.33px; left: 482.00px;">
+				<div class="info left">
+					<h3>Récoltes abondantes</h3>
+					<h4>Survivant Défi</h4>
+					<p>Récoltez <b>1 ulcère(s) viscéral(ux)</b>&nbsp;en tant que survivant.</p>
+					<small><li><i>Sélectionner ce défi génère un ulcère viscéral.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Blight</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="background-image: url('dbdassets/archives/questIcons_Halloween2020.png'); top: 101.33px; left: 301.33px;">
+				<div class="info">
+					<h3>Récoltes abondantes</h3>
+					<h4>Survivant Défi</h4>
+					<p>Récoltez <b>1 ulcère(s) viscéral(ux)</b>&nbsp;en tant que survivant.</p>
+					<small><li><i>Sélectionner ce défi génère un ulcère viscéral.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Blight</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="background-image: url('dbdassets/archives/questIcons_Halloween2020.png'); top: 101.33px; left: 120.67px;">
+				<div class="info">
+					<h3>Récoltes abondantes</h3>
+					<h4>Survivant Défi</h4>
+					<p>Récoltez <b>1 ulcère(s) viscéral(ux)</b>&nbsp;en tant que survivant.</p>
+					<small><li><i>Sélectionner ce défi génère un ulcère viscéral.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Blight</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer" style="background-image: url('dbdassets/archives/questIcons_killer_K21.png'); top: 0.00px; left: 422.00px;">
+				<div class="info">
+					<h3>Combo mortel</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Avec <b>Le Fléau</b>, frappez <b>1 survivant(s)</b> après avoir enchaîné <b>au moins 4</b> Ruées.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Blight</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer" style="background-image: url('dbdassets/archives/questIcons_killer_K21.png'); top: 0.00px; left: 180.67px;">
+				<div class="info">
+					<h3>Coup mortel</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Avec <b>Le Fléau</b>, frappez <b>6 survivant(s)</b> en effectuant une Ruée mortelle.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Blight</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 303.33px; left: 844.00px;">
+				<div class="info top left">
+					<h3>Épilogue</h3>
+					<h4>Défi</h4>
+					<p><i>Terminez le niveau et obtenez vos récompenses.</i></p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">10<img src="dbdassets/cosmetics/1c338033c56480c24e68e1da52b982bfd1c5997f.png"></div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 0.00px; left: 0.00px;">
+				<div class="info">
+					<h3>Prologue</h3>
+					<h4>Défi</h4>
+					<p><i>Sélectionnez des défis pour progresser sur la toile d’Oris.</i></p>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 303.33px; left: 0.00px;">
+				<div class="info top">
+					<h3>Prologue</h3>
+					<h4>Défi</h4>
+					<p><i>Sélectionnez des défis pour progresser sur la toile d’Oris.</i></p>
+				</div>
+			</div>
+			<svg>
+				<line x1="302.83" y1="304.83" x2="483.5" y2="304.83" class="lblack"></line>
+				<line x1="302.83" y1="304.83" x2="362.83" y2="203.5"></line>
+				<line x1="302.83" y1="304.83" x2="182.17" y2="304.83" class="lblack"></line>
+				<line x1="122.17" y1="203.5" x2="362.83" y2="203.5" class="lblue"></line>
+				<line x1="122.17" y1="203.5" x2="1.5" y2="304.83" class="lblue"></line>
+				<line x1="604.17" y1="203.5" x2="362.83" y2="203.5" class="lblue"></line>
+				<line x1="604.17" y1="203.5" x2="664.17" y2="304.83"></line>
+				<line x1="604.17" y1="203.5" x2="784.83" y2="203.5" class="lblue"></line>
+				<line x1="604.17" y1="203.5" x2="604.17" y2="102.83"></line>
+				<line x1="784.83" y1="203.5" x2="845.5" y2="304.83" class="lblue"></line>
+				<line x1="784.83" y1="203.5" x2="724.83" y2="102.83"></line>
+				<line x1="784.83" y1="203.5" x2="845.5" y2="102.83"></line>
+				<line x1="483.5" y1="304.83" x2="423.5" y2="405.5"></line>
+				<line x1="483.5" y1="304.83" x2="664.17" y2="304.83" class="lblack"></line>
+				<line x1="423.5" y1="405.5" x2="122.17" y2="405.5" class="lblue"></line>
+				<line x1="423.5" y1="405.5" x2="664.17" y2="405.5"></line>
+				<line x1="122.17" y1="405.5" x2="1.5" y2="304.83" class="lblue"></line>
+				<line x1="664.17" y1="304.83" x2="845.5" y2="304.83"></line>
+				<line x1="664.17" y1="304.83" x2="664.17" y2="405.5" class="lblack"></line>
+				<line x1="182.17" y1="304.83" x2="1.5" y2="304.83"></line>
+				<line x1="724.83" y1="102.83" x2="845.5" y2="102.83" class="lblack"></line>
+				<line x1="483.5" y1="102.83" x2="302.83" y2="102.83" class="lblue"></line>
+				<line x1="483.5" y1="102.83" x2="423.5" y2="1.5" class=""></line>
+				<line x1="302.83" y1="102.83" x2="122.17" y2="102.83" class="lblue"></line>
+				<line x1="122.17" y1="102.83" x2="1.5" y2="1.5" class="lblue"></line>
+				<line x1="423.5" y1="1.5" x2="182.17" y2="1.5" class="lblack"></line>
+				<line x1="182.17" y1="1.5" x2="1.5" y2="1.5" class=""></line>
+			</svg>
+			<div class="bottom">
+				<small>Rift closed on 06/01/2021, 05:00:00 PM CET</small>
+			</div>
+		</div>
+		<div class="level" data-height="436" data-width="936">
+			<div class="node survivor" style="top: 202.00px; left: 602.67px;">
+				<div class="info left">
+					<h3>Alliance stratégique</h3>
+					<h4>Survivant Défi</h4>
+					<p>Effectuez une action coopérative pendant <b>180&nbsp;seconde(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 404.00px; left: 241.33px;">
+				<div class="info top">
+					<h3>Intérêt médical</h3>
+					<h4>Survivant Défi</h4>
+					<p>Épuisez <b>3&nbsp;trousse(s) de soins</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node shared bblue" style="background-image: url('dbdassets/archives/questIcons_survivorAndKiller.png'); top: 101.33px; left: 361.33px;">
+				<div class="info">
+					<h3>Âge d’argent</h3>
+					<h4>Défi</h4>
+					<p>Gagnez <b>20&nbsp;emblème(s)</b> de <b>qualité Argent</b> ou supérieure.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 303.33px; left: 120.67px;">
+				<div class="info top">
+					<h3>Par tous les moyens</h3>
+					<h4>Survivant Défi</h4>
+					<p>Lâchez <b>10&nbsp;palette(s)</b> pendant une poursuite avec le tueur.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 101.33px; left: 723.33px;">
+				<div class="info left">
+					<h3>Virtuose de l’évasion</h3>
+					<h4>Survivant Défi</h4>
+					<p>Échappez-vous de <b>3&nbsp;partie(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 303.33px; left: 602.67px;">
+				<div class="info top left">
+					<h3>Sombre obsession</h3>
+					<h4>Tueur Défi</h4>
+					<p>Suspendez l’obsession à un crochet <b>6&nbsp;fois</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 303.33px; left: 361.33px;">
+				<div class="info top">
+					<h3>Mécano</h3>
+					<h4>Survivant Défi</h4>
+					<p>Épuisez <b>3&nbsp;boîte(s) à outils</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 303.33px; left: 783.33px;">
+				<div class="info top left">
+					<h3>Exécution</h3>
+					<h4>Tueur Défi</h4>
+					<p>Tuez <b>12&nbsp;survivant(s)</b> par n’importe quel moyen.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 101.33px; left: 120.67px;">
+				<div class="info">
+					<h3>Bien sanglant</h3>
+					<h4>Tueur Défi</h4>
+					<p>Frappez <b>18&nbsp;fois</b> un survivant avec votre arme.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 202.00px; left: 120.67px;">
+				<div class="info">
+					<h3>Poursuite mortelle</h3>
+					<h4>Tueur Défi</h4>
+					<p>Poursuivez les survivants pendant <b>240&nbsp;secondes</b> au total.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">25000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 101.33px; left: 602.67px;">
+				<div class="info left">
+					<h3>Sauveur</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Décrochez <b>3&nbsp;survivant(s)</b>. Le décrochage doit être sécurisé.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node shared bblue" style="background-image: url('dbdassets/archives/questIcons_survivorAndKiller.png'); top: 202.00px; left: 482.00px;">
+				<div class="info left">
+					<h3>Session d’argent</h3>
+					<h4>Défi de maître</h4>
+					<p>Gagnez <b>4&nbsp;emblème(s)</b> de <b>qualité Argent</b> ou supérieure.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 0.00px; left: 482.00px;">
+				<div class="info left">
+					<h3>Atterrissage sûr</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Tombez de haut <b>3 fois</b> pendant une poursuite en utilisant la compétence <b>Atterrissage équilibré</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 0.00px; left: 723.33px;">
+				<div class="info left">
+					<h3>Initiatives urbaines</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Échappez à <b>2&nbsp;poursuite(s)</b> en utilisant la compétence <b>Évasion Urbaine</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="background-image: url('dbdassets/archives/questIcons_survivor_S05.png'); top: 202.00px; left: 723.33px;">
+				<div class="info left">
+					<h3>Pacifier</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Avec <b>Nea Karlsson</b>, échappez-vous de <b>1&nbsp;partie(s)</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 404.00px; left: 361.33px;">
+				<div class="info top">
+					<h3>Coup pour coup</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Lâchez une palette pour étourdir le tueur <b>3&nbsp;fois</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 202.00px; left: 241.33px;">
+				<div class="info">
+					<h3>Sujet d’attention</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Échappez-vous <b>1&nbsp;fois</b> de la partie quand vous êtes l’obsession.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Nea</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 0.00px; left: 180.67px;">
+				<div class="info">
+					<h3>Animosité durable</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Abattez <b>6&nbsp;survivant(s)</b> en utilisant la compétence <b>Tenace</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 404.00px; left: 602.67px;">
+				<div class="info top left">
+					<h3>Né dans la lumière, élevé dans l'obscurité</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Frappez <b>10&nbsp;fois</b> un survivant avec votre arme en utilisant la compétence <b>Rejeton de la lumière</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="background-image: url('dbdassets/archives/questIcons_killer_K03.png'); top: 0.00px; left: 361.33px;">
+				<div class="info">
+					<h3>La vie à la campagne</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Avec <b>Le Montagnard</b>, frappez <b>2&nbsp;survivants</b> avec la tronçonneuse en moins de <b>30&nbsp;secondes</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">35000</div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 202.00px; left: 904.00px;">
+				<div class="info left">
+					<h3>Épilogue</h3>
+					<h4>Défi</h4>
+					<p><i>Terminez le niveau et obtenez vos récompenses.</i></p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">10<img src="dbdassets/cosmetics/35107469af517c96feb7e388c0a8e2bb347682b7.png"></div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 202.00px; left: 0.00px;">
+				<div class="info">
+					<h3>Prologue</h3>
+					<h4>Défi</h4>
+					<p><i>Sélectionnez des défis pour progresser sur la toile d’Oris.</i></p>
+				</div>
+			</div>
+			<svg>
+				<line x1="604.17" y1="203.5" x2="724.83" y2="203.5" class="lblack"></line>
+				<line x1="604.17" y1="203.5" x2="483.5" y2="203.5"></line>
+				<line x1="604.17" y1="203.5" x2="604.17" y2="102.83" class="lblack"></line>
+				<line x1="242.83" y1="405.5" x2="122.17" y2="304.83"></line>
+				<line x1="242.83" y1="405.5" x2="362.83" y2="405.5" class="lblack"></line>
+				<line x1="362.83" y1="102.83" x2="362.83" y2="1.5" class="lblue"></line>
+				<line x1="362.83" y1="102.83" x2="483.5" y2="203.5" class="lblue"></line>
+				<line x1="362.83" y1="102.83" x2="122.17" y2="102.83"></line>
+				<line x1="362.83" y1="102.83" x2="242.83" y2="203.5"></line>
+				<line x1="362.83" y1="102.83" x2="362.83" y2="304.83" class="lblue"></line>
+				<line x1="122.17" y1="304.83" x2="1.5" y2="203.5" class="lblue"></line>
+				<line x1="122.17" y1="304.83" x2="242.83" y2="203.5"></line>
+				<line x1="122.17" y1="304.83" x2="362.83" y2="304.83" class="lblue"></line>
+				<line x1="724.83" y1="102.83" x2="724.83" y2="1.5"></line>
+				<line x1="724.83" y1="102.83" x2="604.17" y2="102.83"></line>
+				<line x1="724.83" y1="102.83" x2="905.5" y2="203.5" class="lblue"></line>
+				<line x1="604.17" y1="304.83" x2="483.5" y2="203.5" class="lblue"></line>
+				<line x1="604.17" y1="304.83" x2="604.17" y2="405.5"></line>
+				<line x1="604.17" y1="304.83" x2="784.83" y2="304.83" class="lblue"></line>
+				<line x1="604.17" y1="304.83" x2="362.83" y2="304.83" class="lblue"></line>
+				<line x1="362.83" y1="304.83" x2="362.83" y2="405.5"></line>
+				<line x1="784.83" y1="304.83" x2="905.5" y2="203.5" class="lblue"></line>
+				<line x1="122.17" y1="102.83" x2="122.17" y2="203.5" class="lblack"></line>
+				<line x1="122.17" y1="102.83" x2="182.17" y2="1.5" class="lblack"></line>
+				<line x1="122.17" y1="203.5" x2="1.5" y2="203.5"></line>
+				<line x1="604.17" y1="102.83" x2="483.5" y2="1.5" class="lblack"></line>
+				<line x1="483.5" y1="1.5" x2="724.83" y2="1.5" class="lblack"></line>
+				<line x1="483.5" y1="1.5" x2="362.83" y2="1.5"></line>
+				<line x1="724.83" y1="203.5" x2="905.5" y2="203.5"></line>
+				<line x1="362.83" y1="405.5" x2="604.17" y2="405.5" class="lblack"></line>
+				<line x1="182.17" y1="1.5" x2="362.83" y2="1.5"></line>
+			</svg>
+			<div class="bottom">
+				<small>Rift closed on 06/01/2021, 05:00:00 PM CET</small>
+			</div>
+		</div>
+		<div class="level" data-height="436" data-width="936">
+			<div class="node shared bblue" style="background-image: url('dbdassets/archives/questIcons_survivorAndKiller.png'); top: 303.33px; left: 301.33px;">
+				<div class="info top">
+					<h3>Âge d’or</h3>
+					<h4>Défi</h4>
+					<p>Gagnez <b>15&nbsp;emblème(s)</b> de <b>qualité Or</b> ou supérieure.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 101.33px; left: 662.67px;">
+				<div class="info left">
+					<h3>Finis les travaux manuels</h3>
+					<h4>Survivant Défi</h4>
+					<p>Purifiez <b>20&nbsp;totems</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 101.33px; left: 301.33px;">
+				<div class="info">
+					<h3>Collecteur de sang</h3>
+					<h4>Survivant Défi</h4>
+					<p>En tant que <b>survivant</b>, gagnez <b>30000&nbsp;points de sang</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 101.33px; left: 844.00px;">
+				<div class="info left">
+					<h3>Combattant pour la liberté</h3>
+					<h4>Survivant Défi</h4>
+					<p>Décrochez <b>10&nbsp;survivant(s) différent(s)</b>. Le décrochage doit être sécurisé.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 101.33px; left: 422.00px;">
+				<div class="info">
+					<h3>Le tout pour le tout</h3>
+					<h4>Survivant Défi</h4>
+					<p>Sabotez <b>12&nbsp;crochet(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 101.33px; left: 120.67px;">
+				<div class="info">
+					<h3>Générosité</h3>
+					<h4>Survivant Défi</h4>
+					<p>Soignez un total de <b>7&nbsp;état(s) de santé</b> d’autres survivants.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 0.00px; left: 542.67px;">
+				<div class="info left">
+					<h3>Mécano</h3>
+					<h4>Survivant Défi</h4>
+					<p>Épuisez <b>5&nbsp;boîte(s) à outils</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 0.00px; left: 301.33px;">
+				<div class="info">
+					<h3>Course mortelle</h3>
+					<h4>Survivant Défi</h4>
+					<p>Soyez poursuivi par le tueur pendant <b>240&nbsp;secondes</b> au total.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 303.33px; left: 482.00px;">
+				<div class="info top left">
+					<h3>Ruisselant de sang</h3>
+					<h4>Tueur Défi</h4>
+					<p>En tant que <b>tueur</b>, gagnez <b>30000&nbsp;points de sang</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 303.33px; left: 120.67px;">
+				<div class="info top">
+					<h3>Désespoir distinct</h3>
+					<h4>Tueur Défi</h4>
+					<p>Suspendez <b>12&nbsp;survivant(s) différent(s)</b> à un crochet.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 303.33px; left: 844.00px;">
+				<div class="info top left">
+					<h3>Bien sanglant</h3>
+					<h4>Tueur Défi</h4>
+					<p>Frappez <b>20&nbsp;fois</b> un survivant avec votre arme.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">30000</div>
+				</div>
+			</div>
+			<div class="node shared" style="background-image: url('dbdassets/archives/questIcons_survivorAndKiller.png'); top: 202.00px; left: 422.00px;">
+				<div class="info">
+					<h3>Session irisée</h3>
+					<h4>Défi de maître</h4>
+					<p>Gagnez <b>2&nbsp;emblème(s)</b> de <b>qualité Irisé</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 202.00px; left: 120.67px;">
+				<div class="info">
+					<h3>Diversions risquées</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Jetez un caillou en utilisant la compétence <b>Diversion</b> <b>2&nbsp;fois</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="background-image: url('dbdassets/archives/questIcons_survivor_S14.png'); top: 202.00px; left: 241.33px;">
+				<div class="info">
+					<h3>Envol d'Adam</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Avec <b>Adam&nbsp;Francis</b>, échappez-vous de <b>1&nbsp;partie(s)</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 202.00px; left: 602.67px;">
+				<div class="info left">
+					<h3>Porte de service</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Échappez-vous de <b>1&nbsp;partie(s)</b> par la trappe.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 0.00px; left: 723.33px;">
+				<div class="info left">
+					<h3>Machiniste</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Réparez complètement <b>3&nbsp;générateur(s)</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 404.00px; left: 542.67px;">
+				<div class="info top left">
+					<h3>Terreur réparatrice</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Frappez <b>10&nbsp;fois</b> un survivant avec votre arme en utilisant la compétence <b>Réparateur</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 404.00px; left: 723.33px;">
+				<div class="info top left">
+					<h3>Mouvements perturbateurs</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Sautez par un obstacle <b>8&nbsp;fois</b> en utilisant la compétence <b>Déboussoler</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node killer" style="background-image: url('dbdassets/archives/questIcons_killer_K03.png'); top: 404.00px; left: 361.33px;">
+				<div class="info top">
+					<h3>Déchirez-les&nbsp;!</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Frappez <b>7 survivant(s)</b> à l'aide de la tronçonneuse avec <b>Le Montagnard</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 303.33px; left: 602.67px;">
+				<div class="info top left">
+					<h3>Destruction minutieuse</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Endommagez un générateur ou détruisez une palette lâchée <b>15&nbsp;fois</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Hillbilly</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">50000</div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 202.00px; left: 904.00px;">
+				<div class="info left">
+					<h3>Épilogue</h3>
+					<h4>Défi</h4>
+					<p><i>Terminez le niveau et obtenez vos récompenses.</i></p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">10<img src="dbdassets/cosmetics/645de6b7d67a67ba9e56297b27c8d1aa2a39ab51.png"></div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 101.33px; left: 0.00px;">
+				<div class="info">
+					<h3>Prologue</h3>
+					<h4>Défi</h4>
+					<p><i>Sélectionnez des défis pour progresser sur la toile d’Oris.</i></p>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 303.33px; left: 0.00px;">
+				<div class="info top">
+					<h3>Prologue</h3>
+					<h4>Défi</h4>
+					<p><i>Sélectionnez des défis pour progresser sur la toile d’Oris.</i></p>
+				</div>
+			</div>
+			<svg>
+				<line x1="302.83" y1="304.83" x2="242.83" y2="203.5"></line>
+				<line x1="302.83" y1="304.83" x2="423.5" y2="203.5"></line>
+				<line x1="302.83" y1="304.83" x2="483.5" y2="304.83" class=""></line>
+				<line x1="302.83" y1="304.83" x2="362.83" y2="405.5"></line>
+				<line x1="302.83" y1="304.83" x2="122.17" y2="304.83" class="lblue"></line>
+				<line x1="664.17" y1="102.83" x2="604.17" y2="203.5" class=""></line>
+				<line x1="664.17" y1="102.83" x2="845.5" y2="102.83" class="lblue"></line>
+				<line x1="664.17" y1="102.83" x2="544.17" y2="1.5" class="lblue"></line>
+				<line x1="302.83" y1="102.83" x2="423.5" y2="102.83"></line>
+				<line x1="302.83" y1="102.83" x2="302.83" y2="1.5" class="lblue"></line>
+				<line x1="302.83" y1="102.83" x2="122.17" y2="102.83" class="lblue"></line>
+				<line x1="845.5" y1="102.83" x2="724.83" y2="1.5"></line>
+				<line x1="845.5" y1="102.83" x2="905.5" y2="203.5" class="lblue"></line>
+				<line x1="423.5" y1="102.83" x2="423.5" y2="203.5" class="lblack"></line>
+				<line x1="122.17" y1="102.83" x2="1.5" y2="102.83" class="lblue"></line>
+				<line x1="544.17" y1="1.5" x2="302.83" y2="1.5" class="lblue"></line>
+				<line x1="544.17" y1="1.5" x2="724.83" y2="1.5" class=""></line>
+				<line x1="483.5" y1="304.83" x2="604.17" y2="304.83" class="lblack"></line>
+				<line x1="122.17" y1="304.83" x2="1.5" y2="304.83" class="lblue"></line>
+				<line x1="845.5" y1="304.83" x2="604.17" y2="304.83" class=""></line>
+				<line x1="845.5" y1="304.83" x2="724.83" y2="405.5" class="lblue"></line>
+				<line x1="845.5" y1="304.83" x2="905.5" y2="203.5" class="lblue"></line>
+				<line x1="423.5" y1="203.5" x2="604.17" y2="203.5" class="lblack"></line>
+				<line x1="122.17" y1="203.5" x2="242.83" y2="203.5" class="lblack"></line>
+				<line x1="122.17" y1="203.5" x2="1.5" y2="102.83"></line>
+				<line x1="604.17" y1="203.5" x2="604.17" y2="304.83" class="lblack"></line>
+				<line x1="544.17" y1="405.5" x2="724.83" y2="405.5"></line>
+				<line x1="544.17" y1="405.5" x2="362.83" y2="405.5" class="lblack"></line>
+			</svg>
+			<div class="bottom">
+				<small>Rift closed on 06/01/2021, 05:00:00 PM CET</small>
+			</div>
+		</div>
+		<div class="level" data-height="436" data-width="936">
+			<div class="node survivor" style="top: 404.00px; left: 301.33px;">
+				<div class="info top">
+					<h3>Finis les travaux manuels</h3>
+					<h4>Survivant Défi</h4>
+					<p>Purifiez <b>20&nbsp;totems</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 303.33px; left: 301.33px;">
+				<div class="info top">
+					<h3>Habileté supérieure</h3>
+					<h4>Survivant Défi</h4>
+					<p>Obtenez un résultat Excellent lors de <b>15&nbsp;test(s) d’habileté</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 101.33px; left: 783.33px;">
+				<div class="info left">
+					<h3>Virtuose de l’évasion</h3>
+					<h4>Survivant Défi</h4>
+					<p>Échappez-vous de <b>5&nbsp;partie(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 0.00px; left: 422.00px;">
+				<div class="info">
+					<h3>Et la lumière fut</h3>
+					<h4>Survivant Défi</h4>
+					<p>Réparez un total de <b>15&nbsp;générateur(s)</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 303.33px; left: 120.67px;">
+				<div class="info top">
+					<h3>Tous les moyens sont bons</h3>
+					<h4>Survivant Défi</h4>
+					<p>Étourdissez le tueur <b>10&nbsp;fois</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 0.00px; left: 542.67px;">
+				<div class="info left">
+					<h3>Allumez-les&nbsp;!</h3>
+					<h4>Survivant Défi</h4>
+					<p>Aveuglez le tueur ou brûlez-le à l’aide de la lumière <b>6&nbsp;fois</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node shared bblue" style="background-image: url('dbdassets/archives/questIcons_survivorAndKiller.png'); top: 202.00px; left: 422.00px;">
+				<div class="info">
+					<h3>Récompenses sanglantes</h3>
+					<h4>Défi</h4>
+					<p>Gagnez <b>120000&nbsp;points de sang</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 303.33px; left: 542.67px;">
+				<div class="info top left">
+					<h3>Bien sanglant</h3>
+					<h4>Tueur Défi</h4>
+					<p>Frappez <b>25&nbsp;fois</b> un survivant avec votre arme.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 101.33px; left: 241.33px;">
+				<div class="info">
+					<h3>Repoussant</h3>
+					<h4>Tueur Défi</h4>
+					<p>Suspendez <b>20&nbsp;survivant(s)</b> à un crochet.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 101.33px; left: 60.00px;">
+				<div class="info">
+					<h3>Gestion de la colère</h3>
+					<h4>Tueur Défi</h4>
+					<p>Détruisez <b>25&nbsp;palettes lâchées</b>.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 202.00px; left: 542.67px;">
+				<div class="info left">
+					<h3>Poursuite mortelle</h3>
+					<h4>Tueur Défi</h4>
+					<p>Poursuivez les survivants pendant <b>300&nbsp;secondes</b> au total.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 202.00px; left: 723.33px;">
+				<div class="info left">
+					<h3>Révérencieux</h3>
+					<h4>Tueur Défi</h4>
+					<p>Sacrifiez <b>20&nbsp;survivant(s)</b> à l’Entité.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">3<img src="dbdassets/icons/bloodpoints.png">45000</div>
+				</div>
+			</div>
+			<div class="node killer bblue" style="top: 404.00px; left: 422.00px;">
+				<div class="info top">
+					<h3>Destructeur d'espoir</h3>
+					<h4>Tueur Défi</h4>
+					<p>Suspendez <b>4&nbsp;survivant(s)</b> à un crochet pendant le Sprint final.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node survivor bblue" style="top: 202.00px; left: 120.67px;">
+				<div class="info">
+					<h3>Course mortelle</h3>
+					<h4>Survivant Défi</h4>
+					<p>Soyez poursuivi par le tueur pendant <b>300&nbsp;secondes</b> au total.</p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 101.33px; left: 542.67px;">
+				<div class="info left">
+					<h3>Mise à l'abri</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Décrochez-vous <b>1&nbsp;fois</b> en utilisant la compétence <b>Libération</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 404.00px; left: 120.67px;">
+				<div class="info top">
+					<h3>Dextérité maximale</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Obtenez un résultat Excellent lors de <b>6&nbsp;test(s) d’habileté</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node survivor" style="top: 0.00px; left: 662.67px;">
+				<div class="info left">
+					<h3>Dégage&nbsp;!</h3>
+					<h4>Survivant Défi de maître</h4>
+					<p>Étourdissez le tueur <b>4&nbsp;fois</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node killer" style="background-image: url('dbdassets/archives/questIcons_killer_K12.png'); top: 0.00px; left: 120.67px;">
+				<div class="info">
+					<h3>Fusée en bouteille</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Avec <b>Le Clown</b>, enveloppez <b>6&nbsp;survivant(s)</b> dans le gaz du Tonique Afterpiece.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node killer" style="background-image: url('dbdassets/archives/questIcons_killer_K12.png'); top: 0.00px; left: 301.33px;">
+				<div class="info">
+					<h3>Chacun sa boisson</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Avec <b>Le Clown</b>, frappez <b>2&nbsp;survivant(s)</b> <i>directement</i> avec la bouteille de Tonique Afterpiece.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node killer" style="top: 303.33px; left: 723.33px;">
+				<div class="info top left">
+					<h3>Tours sournois</h3>
+					<h4>Tueur Défi de maître</h4>
+					<p>Endommagez <b>8&nbsp;générateur(s)</b> en utilisant la compétence <b>Le tour est joué</b>.</p>
+					<small><li><i>Terminez ce défi en une seule partie.</i></li></small><br>
+					<small>Déverrouille l’entrée suivante pour . 5_Observer</small><br>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">5<img src="dbdassets/icons/bloodpoints.png">60000</div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 202.00px; left: 904.00px;">
+				<div class="info left">
+					<h3>Épilogue</h3>
+					<h4>Défi</h4>
+					<p><i>Terminez le niveau et obtenez vos récompenses.</i></p>
+					<div class="rewards"><img src="dbdassets/icons/riftfragments.png">10<img src="dbdassets/cosmetics/41a3945c10eeb443b9f8c2deaec5663317cc900c.png"></div>
+				</div>
+			</div>
+			<div class="node quest bblue" style="top: 202.00px; left: 0.00px;">
+				<div class="info">
+					<h3>Prologue</h3>
+					<h4>Défi</h4>
+					<p><i>Sélectionnez des défis pour progresser sur la toile d’Oris.</i></p>
+				</div>
+			</div>
+			<svg>
+				<line x1="302.83" y1="405.5" x2="423.5" y2="405.5"></line>
+				<line x1="302.83" y1="405.5" x2="302.83" y2="304.83"></line>
+				<line x1="302.83" y1="304.83" x2="122.17" y2="304.83" class="lblue"></line>
+				<line x1="302.83" y1="304.83" x2="423.5" y2="203.5" class="lblue"></line>
+				<line x1="784.83" y1="102.83" x2="544.17" y2="102.83"></line>
+				<line x1="784.83" y1="102.83" x2="664.17" y2="1.5"></line>
+				<line x1="784.83" y1="102.83" x2="905.5" y2="203.5" class="lblue"></line>
+				<line x1="423.5" y1="1.5" x2="544.17" y2="1.5"></line>
+				<line x1="423.5" y1="1.5" x2="423.5" y2="203.5" class="lblue"></line>
+				<line x1="423.5" y1="1.5" x2="302.83" y2="1.5"></line>
+				<line x1="122.17" y1="304.83" x2="122.17" y2="203.5" class="lblue"></line>
+				<line x1="122.17" y1="304.83" x2="122.17" y2="405.5"></line>
+				<line x1="544.17" y1="1.5" x2="544.17" y2="102.83" class="lblack"></line>
+				<line x1="544.17" y1="1.5" x2="664.17" y2="1.5" class="lblack"></line>
+				<line x1="423.5" y1="203.5" x2="423.5" y2="405.5" class="lblue"></line>
+				<line x1="423.5" y1="203.5" x2="544.17" y2="203.5" class="lblue"></line>
+				<line x1="423.5" y1="203.5" x2="242.83" y2="102.83"></line>
+				<line x1="544.17" y1="304.83" x2="724.83" y2="304.83" class="lblack"></line>
+				<line x1="544.17" y1="304.83" x2="423.5" y2="405.5"></line>
+				<line x1="242.83" y1="102.83" x2="61.5" y2="102.83"></line>
+				<line x1="61.5" y1="102.83" x2="1.5" y2="203.5" class="lblue"></line>
+				<line x1="61.5" y1="102.83" x2="122.17" y2="1.5"></line>
+				<line x1="544.17" y1="203.5" x2="724.83" y2="203.5" class="lblue"></line>
+				<line x1="724.83" y1="203.5" x2="905.5" y2="203.5" class="lblue"></line>
+				<line x1="122.17" y1="203.5" x2="1.5" y2="203.5" class="lblue"></line>
+				<line x1="122.17" y1="1.5" x2="302.83" y2="1.5" class="lblack"></line>
+				<line x1="724.83" y1="304.83" x2="905.5" y2="203.5"></line>
+			</svg>
+			<div class="bottom">
+				<small>Rift closed on 06/01/2021, 05:00:00 PM CET</small>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div><a href="help/">Like the site? Help support it.</a></div>
+	<div class="right">
+	</div>
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-<script type="text/javascript" src="assets/js/ancien.js"></script>
 <script type="text/javascript" src="assets/js/menu.js"></script>
 <script type="text/javascript" src="assets/js/unified.min.js"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a2436dcbcc8f84c","version":"2023.2.0","r":1,"token":"7943acbc4e1f4533b35fe7dfbbd64e12","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114" integrity="sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==" data-cf-beacon='{"rayId":"7ac1234a5f033c77","version":"2023.3.0","r":1,"token":"7943acbc4e1f4533b35fe7dfbbd64e12","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
+<!--- Game content and materials are trademarks and copyrights of their respective publisher and its licensors --->
+<!--- fsociety was here --->

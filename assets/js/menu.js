@@ -55,11 +55,11 @@ str=str+"class=\"active\" ";
 str=str+"href=\"";
 if(i<archives)
 {
-str=str+i+".html\">TOME "+i+"</a>";
+str=str+i+".html\">"+i+"-"+this["T" + i]+"</a>";
 }
 else
 {
-str=str+"index.html\">TOME "+i+"</a>";
+str=str+"index.html\">"+i+"-"+this["T" + i]+"</a>";
 }
 }
 document.getElementById("name").innerHTML = "TOME "+nom+" - "+this["T" + nom];

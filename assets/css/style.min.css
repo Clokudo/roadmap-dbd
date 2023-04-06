@@ -228,17 +228,17 @@ p:last-child {
 }
 
 #menu.small {
-    align-items: center;
-    background: rgba(0,0,0,.67);
+/*    align-items: center;
+    background: rgba(0,0,0,.67);*/
     flex-direction: column;
     justify-content: center;
-    left: 40px;
+    left: 50px;
     margin: 0;
     opacity: 0;
     padding: 10px 0;
     pointer-events: none;
     transition: opacity .5s ease-in-out .1s;
-    top: 0;
+    top: 10px;
     width: 150px;
     z-index: 2
 }
@@ -249,7 +249,7 @@ p:last-child {
 }
 
 #menu.small>* {
-    margin: 4px 0
+    margin: 2px 0
 }
 
 #menu * {

@@ -1,5 +1,5 @@
 var str="";
-var archives=14;
+var archives=15;
 var T01="RÉVEIL";
 var T02="JUGEMENT";
 var T03="ESCALADE";
@@ -14,6 +14,7 @@ var T11="DÉVOTION";
 var T12="DISCORDANCE";
 var T13="MALVEILLANCE";
 var T14="TRAHISON";
+var T15="ASCENSION";
 var nom=unescape(location.pathname);
 var nom=nom.replace(/\/$/,"");
 var nom=nom.replace(".html","");
@@ -85,10 +86,10 @@ for (var i = 0; i < elements.length; i++) {
 }*/
 if(nom==archives)
 {
-var N01=new Date();
-var N02=new Date();
-var N03=new Date();
-var N04=new Date();
+var N01=new Date("01-05-2023");
+var N02=new Date("01-05-2023");
+var N03=new Date("01-05-2023");
+var N04=new Date("01-05-2023");
 var CN01=document.getElementById("N01");
 var CN02=document.getElementById("N02");
 var CN03=document.getElementById("N03");

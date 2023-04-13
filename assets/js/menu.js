@@ -106,9 +106,9 @@ for (var i = 0; i < elements.length; i++) {
 if(nom==archives)
 {
 var N01=new Date("2023-05-01 17:00");
-var N02=new Date("2023-05-01 17:00");
-var N03=new Date("2023-05-01 17:00");
-var N04=new Date("2023-05-01 17:00");
+var N02=new Date(N01.getTime()+1000*60*60*24*14);
+var N03=new Date(N02.getTime()+1000*60*60*24*14);
+var N04=new Date(N03.getTime()+1000*60*60*24*14);
 var CN01=document.getElementById("N01");
 var CN02=document.getElementById("N02");
 var CN03=document.getElementById("N03");

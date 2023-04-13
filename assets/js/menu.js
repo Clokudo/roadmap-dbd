@@ -42,6 +42,21 @@ if(nom=="index"||nom=="roadmap-dbd")
 {
 var nom=archives;
 }
+else
+{
+let imgElements = document.querySelectorAll(".rewards img");
+for (let i = 0; i < imgElements.length; i++) {
+  let imgSrc = imgElements[i].getAttribute("src");
+  if (imgSrc === "dbdassets/icons/riftfragments.png") {
+    imgElements[i].style.display = "none";
+    let textNode = imgElements[i].nextSibling;
+    while (textNode.nodeType != 3) {
+      textNode = textNode.nextSibling;
+    }
+    textNode.nodeValue = "";
+  }
+}
+}
 for(var i=1;i<=archives;i++)
 {
 if(i<10)

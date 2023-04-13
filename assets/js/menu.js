@@ -38,6 +38,10 @@ for (let i = 0; i < levels.length; i++) {
   const id = `LN${(i+1).toString().padStart(2, '0')}`;
   levels[i].setAttribute('id', id);
 }
+$("#N01").hide();
+$("#N02").hide();
+$("#N03").hide();
+$("#N04").hide();
 if(nom=="index"||nom=="roadmap-dbd")
 {
 var nom=archives;

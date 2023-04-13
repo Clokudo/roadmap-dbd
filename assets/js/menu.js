@@ -105,10 +105,10 @@ for (var i = 0; i < elements.length; i++) {
 }*/
 if(nom==archives)
 {
-var N01=new Date("2023-05-01");
-var N02=new Date("2023-05-01");
-var N03=new Date("2023-05-01");
-var N04=new Date("2023-05-01");
+var N01=new Date();
+var N02=new Date();
+var N03=new Date();
+var N04=new Date();
 var CN01=document.getElementById("N01");
 var CN02=document.getElementById("N02");
 var CN03=document.getElementById("N03");

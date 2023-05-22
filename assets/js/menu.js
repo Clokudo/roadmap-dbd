@@ -87,7 +87,7 @@ document.getElementById("menu").innerHTML = str;
 
 const lines = document.querySelectorAll("line");
 
-/*lines.forEach((line) => {
+lines.forEach((line) => {
   line.addEventListener("click", () => {
     if (line.classList.contains("lblue")) {
       line.classList.remove("lblue");
@@ -98,7 +98,7 @@ const lines = document.querySelectorAll("line");
       line.classList.add("lblue");
     }
   });
-})*/
+})
 /*var elements = document.getElementsByClassName("info");
 for (var i = 0; i < elements.length; i++) {
     elements[i].style.display = "none";

@@ -181,6 +181,7 @@ function updateResult(activeSpan) {
     // Initialisation des variables pour stocker les total de bloodpoints des nodes bleues et rouges
     let blueBloodpoints = 0;
     let redBloodpoints = 0;
+    let totalBloodpoints = 0;
 
     // Parcourir chaque élément pour récupérer le nombre de bloodpoints
     nodes.forEach(node => {
@@ -232,6 +233,7 @@ levelSpans.forEach((span, index) => {
     // Initialisation des variables pour stocker les total de bloodpoints des nodes bleues et rouges
     let blueBloodpoints = 0;
     let redBloodpoints = 0;
+    let totalBloodpoints = 0;
 
     // Parcourir chaque élément pour récupérer le nombre de bloodpoints
     nodes.forEach(node => {

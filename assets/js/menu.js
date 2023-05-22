@@ -261,7 +261,7 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
     // Mettre à jour le contenu de la div "result"
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
-  }
+  });
 });
 
 // Sélectionnez le span actif

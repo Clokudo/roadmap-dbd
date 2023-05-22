@@ -85,7 +85,7 @@ str=str+"index.html\">"+i+"-"+this["T" + i]+"</a>";
 document.getElementById("name").innerHTML = "TOME "+nom+" - "+this["T" + nom];
 document.getElementById("menu").innerHTML = str;
 
-const lines = document.querySelectorAll("line");
+/*const lines = document.querySelectorAll("line");
 
 lines.forEach((line) => {
   line.addEventListener("click", () => {
@@ -98,7 +98,7 @@ lines.forEach((line) => {
       line.classList.add("lblue");
     }
   });
-})
+})*/
 /*var elements = document.getElementsByClassName("info");
 for (var i = 0; i < elements.length; i++) {
     elements[i].style.display = "none";

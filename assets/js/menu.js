@@ -141,6 +141,7 @@ LN02.classList.remove("show");
 CN03.classList.add("active");
 LN03.classList.add("show");
 }
+/*
 if(N04<new Date())
 {
 $("#N04").show();
@@ -149,6 +150,7 @@ LN03.classList.remove("show");
 CN04.classList.add("active");
 LN04.classList.add("show");
 }
+*/
 }
 /*
 else

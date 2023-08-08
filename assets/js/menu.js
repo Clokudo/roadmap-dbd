@@ -166,9 +166,6 @@ LN04.classList.add("show");
 }
 }
 
-// Récupérer tous les spans de la div "levels"
-const levelSpans = document.querySelectorAll('.levels span');
-
 function updateResult(activeSpan) {
   // Vérifier si un span actif a été trouvé
   if (activeSpan) {
@@ -216,6 +213,9 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
     resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
   }
 }
+
+// Récupérer tous les spans de la div "levels"
+const levelSpans = document.querySelectorAll('.levels span');
 
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');

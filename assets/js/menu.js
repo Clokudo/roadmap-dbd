@@ -141,7 +141,6 @@ LN02.classList.remove("show");
 CN03.classList.add("active");
 LN03.classList.add("show");
 }
-/*
 if(N04<new Date())
 {
 $("#N04").show();
@@ -150,9 +149,7 @@ LN03.classList.remove("show");
 CN04.classList.add("active");
 LN04.classList.add("show");
 }
-*/
 }
-/*
 else
 {
 $("#N01").show();
@@ -167,7 +164,6 @@ if(LN04!=null)
 LN04.classList.add("show");
 }
 }
-*/
 
 function updateResult(activeSpan) {
   // Vérifier si un span actif a été trouvé
@@ -216,7 +212,7 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
     resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
   }
 }
-
+/*
 // Récupérer tous les spans de la div "levels"
 const levelSpans = document.querySelectorAll('.levels span');
 
@@ -268,6 +264,7 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
     resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
   });
 });
+*/
 
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');

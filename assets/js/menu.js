@@ -175,6 +175,7 @@ function updateResult(activeSpan) {
     const levelToShow = document.querySelector(`.level:nth-child(${activeIndex + 1})`);
     levelToShow.classList.add('show');
     activeSpan.classList.add('active');
+    console.log(levelToShow);
 
     // Sélectionner les éléments "node" dans le niveau actif
     const nodes = levelToShow.querySelectorAll('.node');

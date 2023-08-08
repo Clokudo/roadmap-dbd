@@ -159,6 +159,7 @@ LN04.classList.add("show");
 }
 }
 }
+/*
 else
 {
 $("#N01").show();
@@ -173,6 +174,7 @@ if(LN04!=null)
 LN04.classList.add("show");
 }
 }
+*/
 
 function updateResult(activeSpan) {
   // Vérifier si un span actif a été trouvé

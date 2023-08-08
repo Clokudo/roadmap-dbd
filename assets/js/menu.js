@@ -35,6 +35,7 @@ $("#N01").hide();
 $("#N02").hide();
 $("#N03").hide();
 $("#N04").hide();
+
 // Sélection de tous les éléments de la classe "level"
 const levels = document.querySelectorAll('.level');
 
@@ -122,32 +123,40 @@ var LN04=document.getElementById("LN04");
 if(N01<new Date())
 {
 $("#N01").show();
+/*
 CN01.classList.add("active");
 LN01.classList.add("show");
+*/
 }
 if(N02<new Date())
 {
 $("#N02").show();
+/*
 CN01.classList.remove("active");
 LN01.classList.remove("show");
 CN02.classList.add("active");
 LN02.classList.add("show");
+*/
 }
 if(N03<new Date())
 {
 $("#N03").show();
+/*
 CN02.classList.remove("active");
 LN02.classList.remove("show");
 CN03.classList.add("active");
 LN03.classList.add("show");
+*/
 }
 if(N04<new Date())
 {
 $("#N04").show();
+/*
 CN03.classList.remove("active");
 LN03.classList.remove("show");
 CN04.classList.add("active");
 LN04.classList.add("show");
+*/
 }
 }
 else
@@ -219,15 +228,11 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');
 
-console.log(activeSpan);
-
-/*
 // Initialiser le premier span de la div "levels" comme "active" lors du premier chargement de la page
 if (!activeSpan) {
   levelSpans[0].classList.add('active');
   activeSpan = levelSpans[0];
 }
-*/
 
 // Appelez la fonction pour mettre à jour le contenu de la div result
 updateResult(activeSpan);

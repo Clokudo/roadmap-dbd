@@ -178,7 +178,6 @@ function updateResult(activeSpan) {
     const levelToShow = document.querySelector(`.level:nth-child(${activeIndex + 1})`);
     levelToShow.classList.add('show');
     activeSpan.classList.add('active');
-    console.log(levelToShow);
 
     // Sélectionner les éléments "node" dans le niveau actif
     const nodes = levelToShow.querySelectorAll('.node');
@@ -219,6 +218,8 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
 
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');
+
+console.log(activeSpan);
 
 /*
 // Initialiser le premier span de la div "levels" comme "active" lors du premier chargement de la page

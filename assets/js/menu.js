@@ -119,7 +119,7 @@ var LN01=document.getElementById("LN01");
 var LN02=document.getElementById("LN02");
 var LN03=document.getElementById("LN03");
 var LN04=document.getElementById("LN04");
-if(new Date()>=N01)
+if(N01<new Date())
 {
 $("#N01").show();
 CN01.classList.add("active");
@@ -127,7 +127,7 @@ LN01.classList.add("show");
 }
 else
 {
-if(new Date()>=N02)
+if(N02<new Date())
 {
 $("#N02").show();
 CN01.classList.remove("active");
@@ -138,7 +138,7 @@ LN02.classList.add("show");
 }
 else
 {
-if(new Date()>=N03)
+if(N03<new Date())
 {
 $("#N03").show();
 CN02.classList.remove("active");
@@ -149,7 +149,7 @@ LN03.classList.add("show");
 }
 else
 {
-if(new Date()>=N04)
+if(N04<new Date())
 {
 $("#N04").show();
 CN03.classList.remove("active");

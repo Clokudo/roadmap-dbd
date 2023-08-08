@@ -168,6 +168,9 @@ LN04.classList.add("show");
 function updateResult(activeSpan) {
   // Vérifier si un span actif a été trouvé
   if (activeSpan) {
+    // Récupérer tous les spans de la div "levels"
+    const levelSpans = document.querySelectorAll('.levels span');
+    
     // Récupérer l'index du span actif
     const activeIndex = Array.from(levelSpans).indexOf(activeSpan);
 

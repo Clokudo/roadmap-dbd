@@ -125,6 +125,8 @@ $("#N01").show();
 CN01.classList.add("active");
 LN01.classList.add("show");
 }
+else
+{
 if(new Date()>=N02)
 {
 $("#N02").show();
@@ -133,6 +135,9 @@ LN01.classList.remove("show");
 CN02.classList.add("active");
 LN02.classList.add("show");
 }
+}
+else
+{
 if(new Date()>=N03)
 {
 $("#N03").show();
@@ -141,6 +146,9 @@ LN02.classList.remove("show");
 CN03.classList.add("active");
 LN03.classList.add("show");
 }
+}
+else
+{
 if(new Date()>=N04)
 {
 $("#N04").show();
@@ -148,6 +156,7 @@ CN03.classList.remove("active");
 LN03.classList.remove("show");
 CN04.classList.add("active");
 LN04.classList.add("show");
+}
 }
 }
 else

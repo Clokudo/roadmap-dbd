@@ -212,59 +212,6 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
     resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
   }
 }
-/*
-// Récupérer tous les spans de la div "levels"
-const levelSpans = document.querySelectorAll('.levels span');
-
-// Ajouter un gestionnaire d'événement pour les clics sur les spans
-levelSpans.forEach((span, index) => {
-  span.addEventListener('click', () => {
-    // Cacher tous les niveaux et retirer la classe "active" de tous les spans
-    document.querySelectorAll('.level').forEach(level => level.classList.remove('show'));
-    levelSpans.forEach(span => span.classList.remove('active'));
-
-    // Afficher le niveau correspondant au span cliqué et ajouter la classe "active" au span correspondant
-    const levelToShow = document.querySelector(`.level:nth-child(${index + 1})`);
-    levelToShow.classList.add('show');
-    span.classList.add('active');
-
-    // Sélectionner les éléments "node" dans le niveau actif
-    const nodes = levelToShow.querySelectorAll('.node');
-    
-    // Initialisation des variables pour stocker les total de bloodpoints des nodes bleues et rouges
-    let blueBloodpoints = 0;
-    let redBloodpoints = 0;
-    let totalBloodpoints = 0;
-
-    // Parcourir chaque élément pour récupérer le nombre de bloodpoints
-    nodes.forEach(node => {
-      // Vérifier si l'élément est une node bleue ou rouge
-      if (node.classList.contains('bblue')) {
-        // Si c'est une node bleue, ajouter le nombre de bloodpoints à la variable correspondante
-        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
-        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
-        if (!isNaN(bloodpoints)) {
-          blueBloodpoints += bloodpoints;
-        }
-      } else {
-        // Si c'est une node rouge, ajouter le nombre de bloodpoints à la variable correspondante
-        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
-        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
-        if (!isNaN(bloodpoints)) {
-          redBloodpoints += bloodpoints;
-        }
-      }
-    });
-
-blueBloodpoints = blueBloodpoints / 1000;
-redBloodpoints = redBloodpoints / 1000;
-totalBloodpoints = blueBloodpoints + redBloodpoints;
-    // Mettre à jour le contenu de la div "result"
-    const resultElement = document.getElementById('result');
-    resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
-  });
-});
-*/
 
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');

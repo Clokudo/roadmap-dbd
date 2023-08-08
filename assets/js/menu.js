@@ -216,11 +216,13 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');
 
+/*
 // Initialiser le premier span de la div "levels" comme "active" lors du premier chargement de la page
 if (!activeSpan) {
   levelSpans[0].classList.add('active');
   activeSpan = levelSpans[0];
 }
+*/
 
 // Appelez la fonction pour mettre à jour le contenu de la div result
 updateResult(activeSpan);

@@ -1,5 +1,5 @@
 var str="";
-var archives=15;
+var archives=16;
 var T01="RÉVEIL";
 var T02="JUGEMENT";
 var T03="ESCALADE";
@@ -15,6 +15,7 @@ var T12="DISCORDANCE";
 var T13="MALVEILLANCE";
 var T14="TRAHISON";
 var T15="ASCENSION";
+var T16="EXISTENCE";
 var nom=unescape(location.pathname);
 var nom=nom.replace(/\/$/,"");
 var nom=nom.replace(".html","");

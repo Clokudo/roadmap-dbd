@@ -150,7 +150,7 @@ LN04.classList.add("show");
 
 const lines = document.querySelectorAll('line');
 const nodes = document.querySelectorAll('.node');
-lines.forEach((line) => {
+/*lines.forEach((line) => {
   line.addEventListener("click", () => {
     if (line.classList.contains("lblue")) {
       line.classList.remove("lblue");
@@ -170,7 +170,7 @@ nodes.forEach((node) => {
       node.classList.add("bblue");
     }
   });
-});
+});*/
 // Fonction pour mettre à jour les totaux de bloodpoints
 function updateResult(activeSpan) {
   // Vérifier si un span actif a été trouvé

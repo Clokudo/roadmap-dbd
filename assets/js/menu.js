@@ -87,24 +87,6 @@ str=str+"index.html\">"+i+"-"+this["T" + i]+"</a>";
 document.getElementById("name").innerHTML = "TOME "+nom+" - "+this["T" + nom];
 document.getElementById("menu").innerHTML = str;
 
-/*const lines = document.querySelectorAll("line");
-
-lines.forEach((line) => {
-  line.addEventListener("click", () => {
-    if (line.classList.contains("lblue")) {
-      line.classList.remove("lblue");
-      line.classList.add("lblack");
-    } else if (line.classList.contains("lblack")) {
-      line.classList.remove("lblack");
-    } else {
-      line.classList.add("lblue");
-    }
-  });
-})*/
-/*var elements = document.getElementsByClassName("info");
-for (var i = 0; i < elements.length; i++) {
-    elements[i].style.display = "none";
-}*/
 if(nom==archives)
 {
 var N01=1690383600;
@@ -166,6 +148,30 @@ LN04.classList.add("show");
 }
 }
 
+const lines = document.querySelectorAll('line');
+const nodes = document.querySelectorAll('.node');
+lines.forEach((line) => {
+  line.addEventListener("click", () => {
+    if (line.classList.contains("lblue")) {
+      line.classList.remove("lblue");
+      line.classList.add("lblack");
+    } else if (line.classList.contains("lblack")) {
+      line.classList.remove("lblack");
+    } else {
+      line.classList.add("lblue");
+    }
+  });
+});
+nodes.forEach((node) => {
+  node.addEventListener("click", (event) => {
+    if (node.classList.contains("bblue")) {
+      node.classList.remove("bblue");
+    } else {
+      node.classList.add("bblue");
+    }
+  });
+});
+// Fonction pour mettre à jour les totaux de bloodpoints
 function updateResult(activeSpan) {
   // Vérifier si un span actif a été trouvé
   if (activeSpan) {
@@ -204,7 +210,6 @@ function updateResult(activeSpan) {
         }
       }
     });
-
 blueBloodpoints = blueBloodpoints / 1000;
 redBloodpoints = redBloodpoints / 1000;
 totalBloodpoints = blueBloodpoints + redBloodpoints;
@@ -213,19 +218,76 @@ totalBloodpoints = blueBloodpoints + redBloodpoints;
     resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
   }
 }
-
 // Récupérer tous les spans de la div "levels"
 const levelSpans = document.querySelectorAll('.levels span');
+
+// Ajouter un gestionnaire d'événement pour les clics sur les spans
+levelSpans.forEach((span, index) => {
+  span.addEventListener('click', () => {
+  // Cacher tous les niveaux et retirer la classe "active" de tous les spans
+  document.querySelectorAll('.level').forEach(level => {
+    if (level.classList.contains('show')) {
+      level.classList.remove('show');
+    }
+  });
+  levelSpans.forEach(span => span.classList.remove('active'));
+
+  // Afficher le niveau correspondant à l'index et ajouter la classe "active" au span correspondant
+  const levelToShow = document.querySelector(`.level:nth-child(${index + 1})`);
+  if (!levelToShow.classList.contains('show')) {
+    levelToShow.classList.add('show');
+  }
+  levelSpans[index].classList.add('active');
+    // Sélectionner les éléments "node" dans le niveau actif
+    const nodes = levelToShow.querySelectorAll('.node');
+    
+    // Initialisation des variables pour stocker les total de bloodpoints des nodes bleues et rouges
+    let blueBloodpoints = 0;
+    let redBloodpoints = 0;
+    let totalBloodpoints = 0;
+
+    // Parcourir chaque élément pour récupérer le nombre de bloodpoints
+    nodes.forEach(node => {
+      // Vérifier si l'élément est une node bleue ou rouge
+      if (node.classList.contains('bblue')) {
+        // Si c'est une node bleue, ajouter le nombre de bloodpoints à la variable correspondante
+        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+        if (!isNaN(bloodpoints)) {
+          blueBloodpoints += bloodpoints;
+        }
+      } else {
+        // Si c'est une node rouge, ajouter le nombre de bloodpoints à la variable correspondante
+        const bloodpointsElement = node.querySelector('.rewards img[src="dbdassets/icons/bloodpoints.png"]');
+        const bloodpoints = parseInt(bloodpointsElement?.nextSibling?.textContent);
+        if (!isNaN(bloodpoints)) {
+          redBloodpoints += bloodpoints;
+        }
+      }
+    });
+blueBloodpoints = blueBloodpoints / 1000;
+redBloodpoints = redBloodpoints / 1000;
+totalBloodpoints = blueBloodpoints + redBloodpoints;
+    // Mettre à jour le contenu de la div "result"
+    const resultElement = document.getElementById('result');
+    resultElement.innerHTML = `<span style="background:blue">A valider (${blueBloodpoints.toLocaleString()}K BP)</span> <span style="background:red">A conserver (${redBloodpoints.toLocaleString()}K BP)</span> <span style="background:green">Total (${totalBloodpoints.toLocaleString()}K BP)</span> `;
+    });
+  });
 
 // Sélectionnez le span actif
 const activeSpan = document.querySelector('.levels span.active');
 
 // Initialiser le premier span de la div "levels" comme "active" lors du premier chargement de la page
 if (!activeSpan) {
-  levelSpans[0].classList.add('active');
-  activeSpan = levelSpans[0];
+// Sélection de tous les éléments de la classe "level"
+const levels = document.querySelectorAll('.level');
+
+// Boucle à travers chaque élément et affectation d'un ID séquentiel
+for (let i = 0; i < levels.length; i++) {
+  levels[i].classList.remove("show");
+}
+updateResult(levelSpans[3]);
 }
 
 // Appelez la fonction pour mettre à jour le contenu de la div result
 updateResult(activeSpan);
-
